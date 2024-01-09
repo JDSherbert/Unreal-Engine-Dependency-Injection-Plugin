@@ -88,7 +88,8 @@ MyClass::MyClass()
 
 MyClass::~MyClass()
 {
-    // Unregistering this instance from the Dependency Injector (note that this is important to do if not using UObjects due to the GC)
+    // Unregistering this instance from the Dependency Injector
+  // (note that this is important to do if not using UObjects, due to Garbage Collection antics)
     UDependencyInjector::UnregisterObject(this);
 }
 
