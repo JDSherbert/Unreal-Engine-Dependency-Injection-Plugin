@@ -50,3 +50,53 @@ In practice, dependency injection is implemented in various ways, including cons
 
 -----------------------------------------------------------------------
 
+## Using The Injector
+
+You can use the injector as follows:
+
+```cpp
+//.h
+#pragma once
+
+#include "CoreMinimal.h"
+
+/**
+ * Sample class to be registered with the Dependency Injector
+ */
+class YOURPROJECT_API MyClass
+{
+public:
+    MyClass();
+    ~MyClass();
+
+    void MyFunction();
+};
+```
+```cpp
+//.cpp
+// MyClass.cpp
+
+#include "MyClass.h"
+
+MyClass::MyClass()
+{
+    // Constructor logic
+
+    // Registering this instance with the Dependency Injector
+    UDependencyInjector::RegisterObject(this);
+}
+
+MyClass::~MyClass()
+{
+    // Unregistering this instance from the Dependency Injector (note that this is important to do if not using UObjects due to the GC)
+    UDependencyInjector::UnregisterObject(this);
+}
+
+void MyClass::MyFunction()
+{
+    // Function logic
+}
+```
+
+-----------------------------------------------------------------------
+
