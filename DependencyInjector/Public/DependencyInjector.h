@@ -23,26 +23,46 @@ class SHERBERT_API UDependencyInjector : public UObject
 
 private:
 
-    // Private constructor
+    // Private constructor due to singleton shenanigans (instantiated automatically when the Register function gets called/used)
     UDependencyInjector();
 
 public:
 
-    /** Get Injector Singleton instance. */
+    /** 
+    * Get Injector Singleton instance.
+	* @return UDependencyInjector* : Returns the singleton instance of this class, if it exists.
+	* @since 09/01/2024
+	* @author JDSherbert
+    */
     UFUNCTION(BlueprintCallable, Category = "Sherbert|Dependency Injector")
-    static UDependencyInjector* GetInjectorInstance();
+    FORCEINLINE static UDependencyInjector* GetInjectorInstance() { return Instance; }
     
-    /** Register an object with the Dependency Injector. */
+    /** 
+    * Register an object with the Dependency Injector.
+    * @param InjectionObject : The object to add to the Injector.
+	* @since 09/01/2024
+	* @author JDSherbert
+    */
     template<class T>
     UFUNCTION(BlueprintCallable, Category = "Sherbert|Dependency Injector")
     static void RegisterObject(T* InjectionObject);
 
-    /** Unregister an object with the Dependency Injector. */
+    /** 
+    * Unregister an object with the Dependency Injector.
+    * @param InjectionObject : The object to remove from the Injector.
+	* @since 09/01/2024
+	* @author JDSherbert
+    */
     template<class T>
     UFUNCTION(BlueprintCallable, Category = "Sherbert|Dependency Injector")
     static void UnregisterObject(T* InjectionObject);
 
-    /** Get an object of a specific class that is registered with the Dependency Injector. */
+    /** 
+    * Get an object of a specific class that is registered with the Dependency Injector.
+    * @return T* : Returns a copy of a registered object based on type.
+	* @since 09/01/2024
+	* @author JDSherbert
+    */
     template<class T>
     UFUNCTION(BlueprintCallable, Category = "Sherbert|Dependency Injector")
     static T* GetRegisteredObject();
