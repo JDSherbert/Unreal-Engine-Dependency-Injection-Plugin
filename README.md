@@ -1,6 +1,6 @@
 ![image](https://github.com/JDSherbert/Unreal-Engine-Dependency-Injection-Module/assets/43964243/3f6a8f1e-a566-4148-951e-b4e383de069b)
 
-# Unreal Engine Dependency Injection Module
+# Unreal Engine Dependency Injection Plugin
 
 <!-- Header Start -->
 <a href = "https://docs.unrealengine.com/5.3/en-US/"> <img height="40" img width="40" src="https://cdn.simpleicons.org/unrealengine/white"> </a> 
