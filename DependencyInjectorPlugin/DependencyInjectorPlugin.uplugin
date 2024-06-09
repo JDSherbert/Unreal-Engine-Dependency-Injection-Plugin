@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "DependencyInjector",
+	"Description": "Dependency Injector Plugin",
+	"Category": "Sherbert",
+	"CreatedBy": "JDSherbert",
+	"CreatedByURL": "https://github.com/JDSherbert",
+	"DocsURL": "https://github.com/JDSherbert",
+	"MarketplaceURL": "",
+	"SupportURL": "mailto:JDSherbert@outlook.com",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "DependencyInjectorPlugin",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

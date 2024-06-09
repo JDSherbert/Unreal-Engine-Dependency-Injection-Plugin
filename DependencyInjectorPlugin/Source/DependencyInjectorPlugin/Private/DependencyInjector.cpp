@@ -2,11 +2,11 @@
 
 #include "DependencyInjector.h"
 
-/* ------------------------------ Initializations --------------------------------- */
+/* ------------------------------------------------------------ */
 
 UDependencyInjector* UDependencyInjector::Instance = nullptr;
 
-/* ---------------------------- Method Definitions ------------------------------- */
+/* ------------------------------------------------------------ */
 
 void UDependencyInjector::RegisterObject(UObject* InjectionObject)
 {
@@ -20,7 +20,7 @@ void UDependencyInjector::RegisterObject(UObject* InjectionObject)
     Instance->RegisteredObjects.FindOrAdd(ObjectClass).Add(InjectionObject);
 }
 
-/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------ */
 
 void UDependencyInjector::UnregisterObject(UObject* InjectionObject)
 {
@@ -37,7 +37,7 @@ void UDependencyInjector::UnregisterObject(UObject* InjectionObject)
     }
 }
 
-/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------ */
 
 template<class T>
 T* UDependencyInjector::GetRegisteredObject()
@@ -60,4 +60,4 @@ T* UDependencyInjector::GetRegisteredObject()
     return nullptr;
 }
 
-/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------ */
