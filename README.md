@@ -52,9 +52,18 @@ In practice, dependency injection is implemented in various ways, including cons
 
 -----------------------------------------------------------------------
 
-## Using The Injector
+## Usage
+To use the plugin:
+1. Copy the DependencyInjectorPlugin folder into your Unreal Engine project's Plugins directory.
+2. Enable the plugin in your project:
+   - Open your Unreal Engine project.
+   - Go to Edit > Plugins.
+   - Find the DependencyInjectorPlugin in the list and enable it.
+   - Restart Unreal Engine if prompted.
+3. Open your IDE.
+4. Start writing some code!
 
-You can use the injector as follows:
+You can use the injector in C++ as follows:
 
 ```cpp
 //.h
