@@ -15,7 +15,9 @@
 -----------------------------------------------------------------------
 
 <a href="https://docs.unrealengine.com/5.3/en-US/"> 
-  <img align="left" alt="Unreal Engine Template" src="https://img.shields.io/badge/Unreal%20Engine%20Module-black?style=for-the-badge&logo=unrealengine&logoColor=white&color=black&labelColor=black"> </a>
+  <img align="left" alt="Unreal Engine Plugin" src="https://img.shields.io/badge/Unreal%20Engine%20Plugin-black?style=for-the-badge&logo=unrealengine&logoColor=white&color=black&labelColor=black"> </a>
+<a href="https://jdsherbert.itch.io/dependency-injector-plugin"> 
+  <img align="top" alt="Available on Itch.io"  src="https://img.shields.io/badge/Available%20on%20Itch.io-FF0B34.svg?style=for-the-badge&logo=Itch.io&logoColor=white&color=black&labelColor=FF0B34"> </a>
   
 <a href="https://choosealicense.com/licenses/mit/"> 
   <img align="right" alt="License" src="https://img.shields.io/badge/License%20:%20MIT-black?style=for-the-badge&logo=mit&logoColor=white&color=black&labelColor=black"> </a>
